@@ -361,15 +361,15 @@
         });
       }
 
-      var increaseButton = brushButton('img/ui-plus.png', incrementBrush);
-      var decreaseButton = brushButton('img/ui-minus.png', decrementBrush);
+      var increaseButton = brushButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/ui-plus.png', incrementBrush);
+      var decreaseButton = brushButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/ui-minus.png', decrementBrush);
       increaseButton.position = new Point(0, 70);
       decreaseButton.position = new Point(0, 110);
 
-      var drawLineButton = brushLineButton('img/menu-drawline.png', function() {
+      var drawLineButton = brushLineButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-drawline.png', function() {
         setBrushLineForce(true);
       });
-      var drawBrushButton = brushLineButton('img/menu-drawbrush.png', function() {
+      var drawBrushButton = brushLineButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-drawbrush.png', function() {
         setBrushLineForce(false);
       });
       emitter.on('updateBrushLineForce', updateBrushLineButton);
@@ -548,7 +548,7 @@
       var deleteButton = group.data.deleteButton;
 
       if (show && deleteButton == null) {
-        var icon = new Raster('img/ui-x.png');
+        var icon = new Raster('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/ui-x.png');
         icon.scaling = 0.03;
 
         var buttonBacking = new Path.Circle(0, 0, 0.9);
@@ -1079,7 +1079,7 @@
     text.fillColor = colors.text.color;
     modalContents.addChild(text);
 
-    var statusBar = new Raster('img/ui-phonestatus.png');
+    var statusBar = new Raster('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/ui-phonestatus.png');
     statusBar.scaling = 0.35;
     statusBar.position = new Point(group.data.width / 2 - 10, -93);
     modalContents.addChild(statusBar);
@@ -1262,11 +1262,11 @@
         return buttonGroup;
       }
 
-      var saveButton = createMenuButton("Save as Image", 'img/menu-save.png', 0,
+      var saveButton = createMenuButton("Save as Image", 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-save.png', 0,
         function() {saveMapToFile()});
-      var loadButton = createMenuButton('Load Map', 'img/menu-open.png', 1,
+      var loadButton = createMenuButton('Load Map', 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-open.png', 1,
         function() {loadMapFromFile()});
-      var newButton = createMenuButton('New Map', 'img/menu-new.png', 2,
+      var newButton = createMenuButton('New Map', 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-new.png', 2,
         function() {
           var r = confirm("Clear your map? You will lose all unsaved changes.");
           if (r == true) {
@@ -1274,7 +1274,7 @@
           } else { }
         });
 
-      var twitterButton = createMenuButton('Twitter', 'img/menu-twitt.png', 0,
+      var twitterButton = createMenuButton('Twitter', 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-twitt.png', 0,
         function() {window.open('https://twitter.com/island_designer', '_blank')});
       twitterButton.position = new Point(0, 210);
 
@@ -1318,8 +1318,8 @@
     leftToolMenuPosition.y += leftToolMenuIconHeight;
   }
 
-  var redoButton = undoMenuButton('img/menu-redo.png', function() {redo()});
-  var undoButton = undoMenuButton('img/menu-undo.png', function() {undo()});
+  var redoButton = undoMenuButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-redo.png', function() {redo()});
+  var undoButton = undoMenuButton('https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/img/menu-undo.png', function() {undo()});
   var undoMenu = createMenu({
     'undo': undoButton,
     'redo': redoButton,
@@ -1428,7 +1428,7 @@
       },
     },
     townhallSprite: {
-      img: 'sprite/building-townhall.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-townhall.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.023, .023),
       size: new Size(6, 4),
@@ -1441,35 +1441,35 @@
       },
     },
     campsiteSprite: {
-      img: 'sprite/building-campsite.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-campsite.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.017, .017),
       size: new Size(4, 3),
       offset: new Point(-2, -2.6),
     },
     museumSprite: {
-      img: 'sprite/building-museum.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-museum.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.028, .028),
       size: new Size(7, 4),
       offset: new Point(-3.5, -4),
     },
     nookSprite: {
-      img: 'sprite/building-nook.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-nook.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.020, .020),
       size: new Size(7, 4),
       offset: new Point(-3.6, -3.6),
     },
     ableSprite: {
-      img: 'sprite/building-able.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-able.png',
       menuScaling: new Point(.16, .16),
       scaling: new Point(.021, .021),
       size: new Size(5, 4),
       offset: new Point(-2.5, -3.9),
     },
     lighthouseSprite: {
-      img: 'sprite/structure-lighthouse.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-lighthouse.png',
       size: new Size([2, 2]),
       scaling: new Point(.015, .015),
       menuScaling: new Point(.14, .14),
@@ -1482,28 +1482,28 @@
       offset: new Point(-1, -1.6),
     },
     airportBlue: {
-      img: 'sprite/structure/airport.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure/airport.png',
       size: new Size([10, 6]),
       scaling: new Point(.03, .03),
       menuScaling: new Point(.14, .14),
       offset: new Point(-5, -5.5),
     },
     airportRed: {
-      img: 'sprite/structure/airport-red.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure/airport-red.png',
       size: new Size([10, 6]),
       scaling: new Point(.03, .03),
       menuScaling: new Point(.14, .14),
       offset: new Point(-5, -5.5),
     },
     airportYellow: {
-      img: 'sprite/structure/airport-yellow.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure/airport-yellow.png',
       size: new Size([10, 6]),
       scaling: new Point(.03, .03),
       menuScaling: new Point(.14, .14),
       offset: new Point(-5, -5.5),
     },
     airportGreen: {
-      img: 'sprite/structure/airport-green.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure/airport-green.png',
       size: new Size([10, 6]),
       scaling: new Point(.03, .03),
       menuScaling: new Point(.14, .14),
@@ -1513,16 +1513,16 @@
     //legacy
     bridgeVerticalSprite: {
       legacyCategory: 'construction',
-      img: 'sprite/structure-bridge-vertical.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-bridge-vertical.png',
     },
     bridgeHorizontalSprite: {
       legacyCategory: 'construction',
-      img: 'sprite/structure-bridge-horizontal.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-bridge-horizontal.png',
     },
     rampSprite: {
       legacy: 'stairsStoneLeft',
       legacyCategory: 'construction',
-      img: 'sprite/structure-ramp.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-ramp.png',
     },
   };
   Object.keys(asyncAmenitiesDefinition.value).forEach(function(type) {
@@ -1552,79 +1552,79 @@
   var asyncConstructionDefinition = new AsyncObjectDefinition();
     asyncConstructionDefinition.value = {
       bridgeStoneHorizontal: {
-        img: 'sprite/construction/bridge-stone-horizontal.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-stone-horizontal.png',
         size: new Size(6, 4),
       },
       bridgeStoneVertical: {
-        img: 'sprite/construction/bridge-stone-vertical.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-stone-vertical.png',
         size: new Size(4, 6),
       },
       bridgeStoneTLBR: {
-        img: 'sprite/construction/bridge-stone-tlbr.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-stone-tlbr.png',
         size: new Size(6, 6),
       },
       bridgeStoneTRBL: {
-        img: 'sprite/construction/bridge-stone-trbl.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-stone-trbl.png',
         size: new Size(6, 6),
       },
       bridgeWoodHorizontal: {
-        img: 'sprite/construction/bridge-wood-horizontal.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-wood-horizontal.png',
         size: new Size(6, 4),
       },
       bridgeWoodVertical: {
-        img: 'sprite/construction/bridge-wood-vertical.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-wood-vertical.png',
         size: new Size(4, 6),
       },
       bridgeWoodTLBR: {
-        img: 'sprite/construction/bridge-wood-tlbr.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-wood-tlbr.png',
         size: new Size(6, 6),
       },
       bridgeWoodTRBL: {
-        img: 'sprite/construction/bridge-wood-trbl.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/bridge-wood-trbl.png',
         size: new Size(6, 6),
       },
       bridgeVerticalSprite: {
-        img: 'sprite/structure-bridge-vertical.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-bridge-vertical.png',
         menuScaling: new Point(.17, .17),
         scaling: new Point(.026, .026),
         size: new Size(4, 6),
         offset: new Point(-1.5, -5),
       },
       stairsStoneUp: {
-        img: 'sprite/construction/stairs-stone-up.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-stone-up.png',
         size: new Size(2, 4),
       },
       stairsStoneDown: {
-        img: 'sprite/construction/stairs-stone-down.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-stone-down.png',
         size: new Size(2, 4),
       },
       stairsStoneLeft: {
-        img: 'sprite/construction/stairs-stone-left.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-stone-left.png',
         size: new Size(4, 2),
       },
       stairsStoneRight: {
-        img: 'sprite/construction/stairs-stone-right.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-stone-right.png',
         size: new Size(4, 2),
       },
       stairsWoodUp: {
-        img: 'sprite/construction/stairs-wood-up.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-wood-up.png',
         size: new Size(2, 4),
       },
       stairsWoodDown: {
-        img: 'sprite/construction/stairs-wood-down.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-wood-down.png',
         size: new Size(2, 4),
       },
       stairsWoodLeft: {
-        img: 'sprite/construction/stairs-wood-left.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-wood-left.png',
         size: new Size(4, 2),
       },
       stairsWoodRight: {
-        img: 'sprite/construction/stairs-wood-right.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/construction/stairs-wood-right.png',
         size: new Size(4, 2),
       },
       //legacy
       bridgeHorizontalSprite: {
-        img: 'sprite/structure-bridge-horizontal.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-bridge-horizontal.png',
         menuScaling: new Point(.17, .17),
         scaling: new Point(.026, .026),
         size: new Size(5, 3),
@@ -1632,7 +1632,7 @@
       },
       rampSprite: {
         legacy: 'stairsStoneRight',
-        img: 'sprite/structure-ramp.png',
+        img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/structure-ramp.png',
         menuScaling: new Point(.17, .17),
         scaling: new Point(.026, .026),
         size: new Size(5, 3),
@@ -1660,39 +1660,39 @@
   var asyncTreeDefinition = new AsyncObjectDefinition();
   asyncTreeDefinition.value = {
     tree: {
-      img: 'sprite/tree/tree.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree.png',
     },
     treeApple: {
-      img: 'sprite/tree/tree-apple.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-apple.png',
     },
     treeCherry: {
-      img: 'sprite/tree/tree-cherry.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-cherry.png',
     },
     treeOrange: {
-      img: 'sprite/tree/tree-orange.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-orange.png',
     },
     treePear: {
-      img: 'sprite/tree/tree-pear.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-pear.png',
     },
     treePeach: {
-      img: 'sprite/tree/tree-peach.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-peach.png',
     },
     treeAutumn: {
-      img: 'sprite/tree/tree-autumn.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-autumn.png',
     },
     treeSakura: {
-      img: 'sprite/tree/tree-sakura.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/tree-sakura.png',
     },
     pine: {
       rename: [0, 'flatPine'],
-      img: 'sprite/tree/pine.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/pine.png',
     },
     palm: {
       rename: [0, 'flatPalm'],
-      img: 'sprite/tree/palm.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree/palm.png',
     },
     bamboo: {
-      img: 'sprite/tree-bamboo.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-bamboo.png',
       menuScaling: new Point(.26, .26),
       scaling: new Point(.02, .02),
       offset: new Point(-.6, -.75),
@@ -1748,43 +1748,43 @@
   var asyncFlowerDefinition = new AsyncObjectDefinition();
   asyncFlowerDefinition.value = {
     chrysanthemumWhite: {
-      img: 'sprite/flower/chrysanthemum-white.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/chrysanthemum-white.png',
     },
     hyacinthRed: {
-      img: 'sprite/flower/hyacinth-red.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/hyacinth-red.png',
     },
     hyacinthWhite: {
-      img: 'sprite/flower/hyacinth-white.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/hyacinth-white.png',
     },
     lilyWhite: {
-      img: 'sprite/flower/lily-white.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/lily-white.png',
     },
     pansyPurple: {
-      img: 'sprite/flower/pansy-purple.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/pansy-purple.png',
     },
     pansyRed: {
-      img: 'sprite/flower/pansy-red.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/pansy-red.png',
     },
     pansyYellow: {
-      img: 'sprite/flower/pansy-yellow.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/pansy-yellow.png',
     },
     poppyOrange: {
-      img: 'sprite/flower/poppy-orange.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/poppy-orange.png',
     },
     poppyRed: {
-      img: 'sprite/flower/poppy-red.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/poppy-red.png',
     },
     poppyWhite: {
-      img: 'sprite/flower/poppy-white.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/poppy-white.png',
     },
     tulipRed: {
-      img: 'sprite/flower/tulip-red.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/tulip-red.png',
     },
     tulipWhite: {
-      img: 'sprite/flower/tulip-white.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/tulip-white.png',
     },
     tulipYellow: {
-      img: 'sprite/flower/tulip-yellow.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/tulip-yellow.png',
     },
 //    weedBush: {
 //      img: 'sprite/flower/weed-bush.png',
@@ -1793,7 +1793,7 @@
 //      img: 'sprite/flower/weed-brush.png',
 //    },
     weedClover: {
-      img: 'sprite/flower/weed-clover.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/flower/weed-clover.png',
     },
 //    weedCattail: {
 //      img: 'sprite/flower/weed-cattail.png',
@@ -1828,21 +1828,21 @@
     house: {},
     building: {},
     tentSprite: {
-      img: 'sprite/building-tent.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-tent.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.022, .022),
       size: new Size([5,4]),
       offset: new Point(-2.5, -3.6)
     },
     playerhouseSprite: {
-      img: 'sprite/building-playerhouse.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-playerhouse.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.022, .022),
       size: new Size([5,4]),
       offset: new Point(-2.5, -3.6)
     },
     houseSprite: {
-      img: 'sprite/building-house.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/building-house.png',
       menuScaling: new Point(.17, .17),
       scaling: new Point(.02, .02),
     },
@@ -1859,36 +1859,36 @@
     treePineSprite: {
       legacy: 'pine',
       legacyCategory: 'tree',
-      img: 'sprite/tree-pine.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-pine.png',
     },
     treePalmSprite: {
       legacy: 'palm',
       legacyCategory: 'tree',
-      img: 'sprite/tree-palm.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-palm.png',
     },
     treeFruitSprite: {
       legacy: 'treeOrange',
       legacyCategory: 'tree',
-      img: 'sprite/tree-fruit.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-fruit.png',
     },
     // legacy
     bush: {
-      img: 'sprite/tree-fruit.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-fruit.png',
       legacy: 'flatBush',
       legacyCategory: 'tree',
     },
     fruit: {
-      img: 'sprite/tree-fruit.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-fruit.png',
       legacy: 'flatTree',
       legacyCategory: 'tree',
     },
     palm: {
-      img: 'sprite/tree-fruit.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-fruit.png',
       legacy: 'flatPalm',
       legacyCategory: 'tree',
     },
     pine: {
-      img: 'sprite/tree-fruit.png',
+      img: 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/sprite/tree-fruit.png',
       legacy: 'flatPine',
       legacyCategory: 'tree',
     },
@@ -2220,7 +2220,7 @@
               var colorData = colors[colorKey];
               if (colorKey == colors.pathEraser.key) {
                 buttonIcon = new Group();
-                eraserImg = new Raster(imgPath + toolPrefix + 'eraser.png');
+                eraserImg = new Raster(imgPath + toolPrefix + 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/eraser.png');
                 eraserImg.scaling = new Point(0.35, 0.35);
                 buttonIcon.addChildren([eraserImg]); 
               } else {
@@ -2442,7 +2442,7 @@
   });
   addToLeftToolMenu(); // spacer
 
-  var tool = new Raster(imgPath + 'menu-help.png');
+  var tool = new Raster(imgPath + 'https://min.gitcdn.link/repo/eugeneration/HappyIslandDesigner/master/menu-help.png');
   tool.scaling = new Point(.3, .3);
   tool.position = new Point(0, 4);
   var button = createButton(tool, 20, function() {});
